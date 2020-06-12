@@ -1,0 +1,161 @@
+* {
+	color: white;
+	font-family: Play;
+	font-style: normal;
+	font-weight: normal;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 23px;
+}
+
+a {
+	color: white;
+}
+
+a:hover{
+	color: #DB8837;
+}
+
+body{
+	background-color: #333333;
+}
+
+hr {
+	width: 100%;
+}
+
+#footer {
+	display: grid;
+}
+
+/*spacing for larger screens*/
+@media only screen and (min-width: 1024px) {
+.upper-footer {
+	margin: 96px 115px 0px 115px;
+}
+}
+
+/*spacing for smaller screens*/
+@media only screen and (max-width: 1023px) {
+.upper-footer {
+	margin: 25px 3% 0px 5%;
+}
+}
+
+.column-one h3 {
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 40px;
+}
+
+.column-three h3 {
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 25px;
+}
+
+/*icons spacing*/
+.fa {
+	margin-right: 2%;
+}
+
+.newsletter h4 {
+	font-weight: bold;
+}
+
+.newsletter p {
+	font-size: 18px;
+	line-height: 21px;
+}
+
+input[type=text]{
+	width: 314px;
+	height: 40px;
+	border: 0.5px solid #FFFFFF;
+	box-sizing: border-box;
+	background-color: transparent;
+	padding-left: 1%;
+}
+
+input[type=submit]{
+	width: 146px;
+	height: 52px;
+	background: #DB8837;
+	text-transform: uppercase;
+	margin-left: 30px;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 21px;
+	border-width: 0;
+}
+
+/*submit button and newsletter section spacing for smaller screens*/
+@media only screen and (max-width: 1023px) {
+input[type=submit]{
+	width: auto;
+	height: auto;
+	margin-left: auto;
+	margin-top: 3%;
+	padding: 2%;
+}
+
+.newsletter {
+	margin-top: 5%;
+}}
+
+/*newsletter form arrangement for smaller screens*/
+@media only screen and (max-width: 1025px) {
+.newsletter-form {
+	display: inline-block;
+}}
+
+
+/*spacing for larger screens*/
+@media only screen and (min-width: 1024px) {
+.copyright {
+	margin: 1% 100px;
+}}
+
+/*spacing for medium screens*/
+@media only screen and (min-width: 501px) and (max-width: 1023px) {
+.copyright-left {
+    margin-left: 5%;
+}
+
+.copyright-right {
+	margin-right: 1.5%;
+}
+}
+
+/*arrangement for larger screens*/
+@media only screen and (min-width: 1024px) {
+.copyright-left {
+	float: left;
+}
+
+.copyright-right {
+	float: right;
+}
+
+.copyright-right a{
+	padding-right: 2%;
+}
+}
+
+/*copyright section general layout*/
+.copyright {
+	display: flex;
+}
+
+/*rearrangement for smaller screens to stack*/
+@media only screen and (max-width: 500px) {
+.copyright {
+	display: contents;
+}
+
+.copyright-right {
+	display: grid;
+	margin-top: 3%;
+}
+}
